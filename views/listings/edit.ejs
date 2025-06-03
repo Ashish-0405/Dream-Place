@@ -1,0 +1,41 @@
+<% layout("/layouts/boilerplate.ejs") %> 
+<body>
+    <h1>Edit Place : </h1>
+    <div class="row">
+        <div class="col-8 offset-2">
+     <form method="post" action="/listings/<%= showListing._id %>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+               <div>
+                   <label for="title" class="form-label">Title : </label>
+                <input type="text" class="form-control" required name="listing[title]" value="<%= showListing.title %>"> 
+               </div><br>
+
+               <div>
+                   <label for="description" class="form-label">Description : </label>
+                   <textarea name="listing[description]" required class="form-control"><%= showListing.description %></textarea>
+               </div><br>
+               <div>
+                   <label for="image" class="form-label">Image URL/link : </label>
+                   <input type="file" class="form-control" name="listing[image]"> 
+               </div>
+          <br>
+           <div class="row">
+             <div class="col-sm-6">
+                   <label for="price" class="form-label">Price : </label>
+              <input type="number" class="form-control" required name="listing[price]" value="<%= showListing.price %>" required> 
+          </div>
+         
+          <div class="col-sm-6">
+                   <label for="country" class="form-label">Country : </label>
+              <input type="text" class="form-control" required name="listing[country]" value="<%= showListing.country %>"> 
+          </div>
+           </div>
+          <div>
+                   <label for="location" class="form-label">Location : </label>
+              <input type="text" class="form-control" required name="listing[location]" value="<%= showListing.location %>"> 
+          </div>
+          <br>
+          <button class="btn btn-dark col-2">ADD</button>
+    </form>
+    </div>
+    </div><br>
+</body>

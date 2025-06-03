@@ -1,0 +1,39 @@
+<% layout("/layouts/boilerplate.ejs") %>
+<div class="form-check form-switch m-3">
+  <input class="form-check-input" type="checkbox" role="switch" id="checked">
+  <label class="form-check-label" for="switchCheckChecked">Display Total After Taxes</label>
+</div>
+    <body>
+        <div class="row row-cols-xl-4 mt-4 row-cols-lg-3 row-cols-md-2 row-cols-xs-1">
+        <% for(let listing of allListings) { %>
+            <a href="/listings/<%= listing._id %>" class="listing-link">
+            <div class="card col place-card" style="width: 18rem;">
+                <img src="<%= listing.image.url %>" class="card-img-top" alt="listing_image">
+                <div class="card-img-overlay"></div>
+                <div class="card-body">
+                    <h6 class="card-title">
+                        <%= listing.title %>
+                    </h6>
+<p class="card-text">&#8377; <%= listing.price.toLocaleString("en-IN") %> / night
+    <span class="ms-1 tax-info">+18% GST</span>
+                    </p>
+                </div>
+            </div>
+            </a>
+            <% } %>
+            </div>
+            <script>
+                let taxSwitch = document.getElementById("checked");
+                taxSwitch.addEventListener("click", function(){
+                let taxInfo = document.getElementsByClassName("tax-info");
+                for(info of taxInfo){
+                    if(info.style.display == "inline"){
+                        info.style.display = "none";
+                    }else{
+                        info.style.display = "inline";
+                    }
+                }       
+                })
+            </script>
+
+    </body>

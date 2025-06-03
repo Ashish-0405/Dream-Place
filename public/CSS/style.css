@@ -1,0 +1,310 @@
+/* footer */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: center;
+    line-height: 2.5;
+    margin-top: auto;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials i {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+/* All Places */
+
+.place-card {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem;
+    /* width: 100%; */
+    object-fit: cover;
+    height: 18rem;
+}
+
+.card-body {
+    padding: 0 !important;
+    margin: 0;
+}
+
+.listing-link {
+    text-decoration: none;
+    color: black;
+}
+
+.row a {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title {
+    padding: 0;
+    margin: 0;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.3;
+    background-color: white;
+}
+
+
+/* New Page CSS */
+
+.form-label {
+    font-weight: 700;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 10px black;
+}
+
+h1 {
+    margin: 1rem 0rem;
+    text-decoration: underline;
+}
+
+/* Show Page */
+
+.card-body p {
+    margin: 0;
+}
+
+.show-btns {
+    display: flex;
+    flex-direction: column;
+    width: 3.5rem;
+
+}
+
+/* All Reviews */
+.review-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.login-a {
+    /* display: inline !important; */
+    margin-left: 1rem;
+    border-radius: 30px 30px 30px 30px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.login-btn {
+    border-radius: 30px 30px 30px 30px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+/* Navbar for SEarch CSS */
+  .search-btn{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 30px 30px 30px 30px;
+    padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .search-btn:hover{
+    color: black;
+    background-color: #ffffff;
+     box-shadow: -5px 5px 30px #f7f3f3 !important;
+  }
+  .search-inp{
+    border-radius: 30px 30px 30px 30px;
+    font-size: 0.8rem;
+    width: 15rem;
+  }
+
+  @media screen and (max-width: 520px) {
+    .search-nav form{
+         background-color: bisque;
+    } 
+  }
+
+
+/* Login CSS */
+
+.nav-btn {
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.login-bg {
+    background-color: aliceblue;
+    padding: 3rem 2rem 4rem 3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    /* margin: auto; */
+    /* margin-top: 3rem; */
+    box-shadow: -5px -10px 3rem rgba(104, 104, 104, 0.36);
+    /* width: auto; */
+}
+
+/* Css of Gst */
+.tax-info{
+   display: none; 
+}
+
+
+@media screen and (max-width: 992px) {
+    .login-a {
+        width: auto;
+        display: inline !important;
+        margin-left: 1rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+
+    /* .login-bg{
+         display: flex;
+         justify-content: center !important;
+         align-items: center;
+         width: auto;
+        } */
+}
+
+@media screen and (max-width: 768px) {
+   .login-a {
+       padding: 0;
+      width: 7rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 0.9rem;
+     
+   }
+}
+
+@media screen and (max-width: 600px) {
+    .login-bg {
+        display: flex;
+        offset: 0;
+        /* justify-content: flex-start; */
+        /* offset: -1; */
+        justify-content: center;
+        align-items: center;
+        /* margin-bottom: 2rem; */
+        width: 18rem;
+        padding: 2rem 0.5rem 2rem 0.5rem;
+        margin: auto;
+        /* margin-bottom: 10rem; */
+        /* padding: 0rem 3rem 0rem 3rem ; */
+        /* width: auto;
+        padding: 20px;
+        margin-top: 5rem; */
+    }
+
+    .login-btn {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
+        margin-left: 1rem;
+        /* margin-top: 1rem; */
+        /* width: 100%; */
+        /* margin-bottom: 1rem; */
+        /* padding: 0rem 1rem 0rem 1rem; */
+    }
+}
+
+/* @media screen and (max-width: 576px) {
+    .login-bg{
+        width: 75%;
+    }
+} */
+
+/* Maps CSS */
+
+#map {
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    border-radius: 1.5rem;
+}
+
+/* .some-class p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.some-class{
+   text-align: center; 
+   width: 10rem;
+} */
+
+@media screen and (max-width: 576px) {
+    .nav-drop {
+        display: none;
+    }
+
+    .search-nav form {
+        width: 18rem;
+        margin-right: 5rem;
+    }
+
+    .search-nav {
+        display: none;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        width: auto;
+        margin: auto;
+    }
+
+    .login-a {
+        /* width: auto;
+        margin: auto;
+        display: inline;
+         border-radius: 30px 30px 30px 30px;
+         /* padding: 0.5rem 2rem 0.5rem 2rem; */
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: block;
+    }
+
+    .nav-btn {
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
