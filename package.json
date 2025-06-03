@@ -1,4 +1,7 @@
 {
+  "engines" :{
+    "node": "22.14.0"
+  },
   "name": "major-project",
   "version": "1.0.0",
   "description": "",
@@ -36,9 +39,6 @@
     "session": "^0.1.0"
   },
   "devDependencies": {},
-  "engines": {
-    "node": "22.14.0"
-  },
   "engine": {
     "node": "22.14.0"
   }
