@@ -38,5 +38,8 @@
   "devDependencies": {},
   "engines": {
     "node": "22.14.0"
+  },
+  "engine": {
+    "node": "22.14.0"
   }
 }
