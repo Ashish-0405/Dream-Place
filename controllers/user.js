@@ -14,7 +14,7 @@ module.exports.afterSignUp = async(req, res) => {
         if(err){
             next(err)
         }
-        req.flash("added", "Welcome to the Dream Place! ")
+        req.flash(`added`, `Welcome to the Dream Place!, ${req.body.username}`)
         res.redirect("/listings")
     })
     }catch(e){
