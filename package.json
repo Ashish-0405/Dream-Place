@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "major-project": "file:opt/render/project/src"
+  }
+}
