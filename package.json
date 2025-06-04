@@ -12,5 +12,18 @@
   "dependencies": {
     "major-project": "file:opt/render/project/src"
   },
-  "devDependencies": {}
+  "devDependencies": {},  
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ]
+
 }
