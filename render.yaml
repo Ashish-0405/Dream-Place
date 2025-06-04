@@ -1,0 +1,23 @@
+# Exported from Render on 2025-06-04T05:32:28Z
+services:
+- type: web
+  name: Major-Project
+  runtime: node
+  repo: https://github.com/Ashish-0405/Major-Project
+  plan: free
+  envVars:
+  - key: ATLAS_URL
+    sync: false
+  - key: MAP_TOKEN
+    sync: false
+  - key: CLOUD_SCERET_KEY
+    sync: false
+  - key: CLOUD_API_KEY
+    sync: false
+  - key: CLOUD_NAME
+    sync: false
+  region: oregon
+  buildCommand: npm i
+  startCommand: node app.js
+  autoDeployTrigger: "off"
+version: "1"
