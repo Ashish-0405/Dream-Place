@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "major-project": "file:opt/render/project/src"
+    "major-project": "file:opt/render/project/src",
+    "mongoose": "^8.15.1"
   },
   "builds": [
     {
