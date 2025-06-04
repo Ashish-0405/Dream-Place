@@ -17,7 +17,7 @@ services:
   - key: CLOUD_NAME
     sync: false
   region: oregon
-  buildCommand: npm i
-  startCommand: node app.js
+  buildCommand: cd opt/render/project/src && npm install
+  startCommand: cd opt/render/project/src && node app.js
   autoDeployTrigger: "off"
 version: "1"
