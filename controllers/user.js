@@ -14,7 +14,7 @@ module.exports.afterSignUp = async(req, res) => {
         if(err){
             next(err)
         }
-        req.flash(`added`, `Welcome to the Dream Place!, ${req.body.username}`)
+        req.flash(`added`, `Welcome to the Dream Place!, ${username}`)
         res.redirect("/listings")
     })
     }catch(e){
@@ -28,7 +28,8 @@ module.exports.renderLoginPage = (req, res) => {
 }
 
 module.exports.afterLogin = async(req, res) => {
-     req.flash("added",`Welcome back to the Dream Place!, ${req.body.username}`)
+     let { username, email, password } = req.body;
+     req.flash("added",`Welcome back to the Dream Place!, ${username}`)
      let redirectUrl = res.locals.redirectUrl || '/listings'
      res.redirect(redirectUrl)
 }
@@ -39,7 +40,7 @@ module.exports.logout = (req, res) => {
         if(err) {
            return next(err)
         }
-        req.flash("added", "Goodbye! ")
+        req.flash("added", "Goodbye!")
         res.redirect("/listings")
     })
 }
