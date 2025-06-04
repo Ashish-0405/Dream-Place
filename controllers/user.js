@@ -28,7 +28,7 @@ module.exports.renderLoginPage = (req, res) => {
 }
 
 module.exports.afterLogin = async(req, res) => {
-     req.flash("added","Welcome back to the Dream Place!")
+     req.flash("added",`Welcome back to the Dream Place!, ${req.body.username}`)
      let redirectUrl = res.locals.redirectUrl || '/listings'
      res.redirect(redirectUrl)
 }
