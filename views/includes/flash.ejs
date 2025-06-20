@@ -1,4 +1,4 @@
-<% if(added && added.length){ %>
+<% if(typeof added !== 'undefined' && added && added.length){ %>
 <div class="text-center alert alert-success col-6 offset-3 alert-dismissible fade show" role="alert">
         <%= added %>
          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -6,7 +6,7 @@
         </div>
         <% } %>
          
-        <% if(error && error.length){ %>
+        <% if(typeof error !== 'undefined' && error && error.length){ %>
     <div class="text-center alert alert-danger col-6 offset-3 alert-dismissible fade show" role="alert">
         <%= error %>
          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

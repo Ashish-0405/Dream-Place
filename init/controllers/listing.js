@@ -1,4 +1,4 @@
-const Listing = require("./listing.js")
+const Listing = require("../../Model/listing.js")
 // const mbxGecoding = require("@mapbox/mapbox-sdk");
 // const mbxStyles = require('@mapbox/mapbox-sdk/services/styles');
 const mbxGeocoding = require('@mapbox/mapbox-sdk/services/geocoding');
