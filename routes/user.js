@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router({ mergeParams: true });
-const wrapAsync = require("../utils/wrapAsync");
+const wrapAsync = require(".//utils/wrapAsync.js")
 const passport = require("passport");
 const { saveRedirectUrl, isLoggedIn } = require("../middleware.js")
 
-const userControllers = require("../controllers/user.js")
+const userControllers = require("../init/controllers/user.js")
 
 // Route for signup for New User Rgistrer : 
 router.get("/signup",userControllers.renderSignUpPage) 
